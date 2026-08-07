@@ -93,7 +93,7 @@ export default function ProposalSection() {
           </div>
         </div>
 
-        {/* Course Levels Section (Page 2 of PDF) */}
+        {/* Course Levels Section */}
         <div className="bg-white rounded-3xl border border-brand-ivoire p-8 sm:p-10 shadow-lg space-y-8 text-left">
           <div className="space-y-2">
             <span className="font-sans text-xs uppercase tracking-[0.2em] font-bold text-brand-or bg-brand-or/10 px-3 py-1 rounded-full inline-block">
@@ -158,7 +158,7 @@ export default function ProposalSection() {
           </div>
         </div>
 
-        {/* Sobre Las Clases Box (Page 3 of PDF) - High Contrast Dark Block */}
+        {/* Sobre Las Clases Box */}
         <div className="bg-brand-marine text-white rounded-3xl p-8 sm:p-12 shadow-2xl space-y-8 text-left border-2 border-brand-or/40 relative overflow-hidden">
           <div className="space-y-3">
             <span className="font-sans text-xs uppercase tracking-[0.25em] font-bold text-brand-or bg-brand-or/20 px-3.5 py-1.5 rounded-full inline-block border border-brand-or/40">
@@ -231,12 +231,12 @@ export default function ProposalSection() {
                     {step.icon}
                   </div>
                   <div>
-                    {/* MODIFICACIÓN: Título dinámico reforzado para ser blanco puro al seleccionar */}
+                    {/* TÍTULO BLANCO AL SELECCIONAR */}
                     <h4 className={`font-serif text-base font-bold leading-tight ${activeStep === idx ? 'text-white' : 'text-brand-marine'}`}>
                       {step.title}
                     </h4>
-                    {/* MODIFICACIÓN: Subtítulo dinámico con text-gray-200 para evitar problemas de opacidad en Tailwind */}
-                    <p className={`font-sans text-xs mt-0.5 ${activeStep === idx ? 'text-gray-200' : 'text-brand-ardoise'}`}>
+                    {/* SUBTÍTULO CELESTE (text-brand-ciel) AL SELECCIONAR PARA QUE NO DESAPAREZCA */}
+                    <p className={`font-sans text-xs mt-0.5 ${activeStep === idx ? 'text-brand-ciel' : 'text-brand-ardoise'}`}>
                       {step.subtitle}
                     </p>
                   </div>
@@ -247,7 +247,6 @@ export default function ProposalSection() {
           </div>
 
           {/* Right Column: Expanded View (7 Columns) */}
-          {/* MODIFICACIÓN: Se eliminó min-h-[380px] y se reemplazó por h-fit para que se adapte al contenido */}
           <div className="lg:col-span-7 bg-white rounded-2xl border border-brand-ivoire p-6 sm:p-8 flex flex-col justify-start shadow-xs relative overflow-hidden text-left h-fit">
             
             {/* Structural corner lines */}
