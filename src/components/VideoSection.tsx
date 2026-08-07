@@ -161,7 +161,6 @@ export default function VideoSection() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 lg:gap-12 max-w-3xl mx-auto">
           
           {/* REPRODUCTOR 1: VIDEO DE LA CLASE */}
-          {/* CAMBIO: Se cambió aspect-[9/16] a aspect-[9/19] para dar espacio a los controles */}
           <div className="w-full max-w-[320px] sm:max-w-[340px] flex flex-col bg-[#0a1829] rounded-3xl overflow-hidden border-2 border-brand-ciel/30 shadow-2xl relative aspect-[9/19]" ref={container1Ref}>
             
             {/* Header bar */}
@@ -186,8 +185,8 @@ export default function VideoSection() {
                 ref={video1Ref}
                 src="sergio_intro.mp4"
                 poster="image00022.jpeg"
-                // CAMBIO: Se cambió object-cover por object-contain
-                className="w-full h-full object-contain cursor-pointer"
+                // CAMBIO APLICADO AQUÍ: Si está en 0:00 y pausado es cover, de lo contrario es contain
+                className={`w-full h-full cursor-pointer ${(!isPlaying1 && currentTime1 === 0) ? 'object-cover' : 'object-contain'}`}
                 playsInline
                 preload="metadata"
                 onClick={togglePlay1}
@@ -278,7 +277,6 @@ export default function VideoSection() {
           </div>
 
           {/* REPRODUCTOR 2: VIDEO DE LA PRESENTACIÓN DEL PROFESOR */}
-          {/* CAMBIO: Se cambió aspect-[9/16] a aspect-[9/19] para dar espacio a los controles */}
           <div className="w-full max-w-[320px] sm:max-w-[340px] flex flex-col bg-[#0a1829] rounded-3xl overflow-hidden border-2 border-brand-ciel/30 shadow-2xl relative aspect-[9/19]" ref={container2Ref}>
             
             {/* Header bar */}
@@ -303,8 +301,8 @@ export default function VideoSection() {
                 ref={video2Ref}
                 src="sergio_vid.mp4"
                 poster="image00009.jpeg"
-                // CAMBIO: Se cambió object-cover por object-contain
-                className="w-full h-full object-contain cursor-pointer"
+                // CAMBIO APLICADO AQUÍ TAMBIÉN
+                className={`w-full h-full cursor-pointer ${(!isPlaying2 && currentTime2 === 0) ? 'object-cover' : 'object-contain'}`}
                 playsInline
                 preload="metadata"
                 onClick={togglePlay2}
