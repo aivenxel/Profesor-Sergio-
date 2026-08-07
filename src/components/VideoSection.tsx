@@ -157,11 +157,12 @@ export default function VideoSection() {
           </h2>
         </div>
 
-        {/* Vertical 9:16 Dual Video Player Grid */}
+        {/* Vertical Dual Video Player Grid */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 lg:gap-12 max-w-3xl mx-auto">
           
-          {/* REPRODUCTOR 1: VIDEO DE LA CLASE (9:16 Vertical Aspect Ratio) */}
-          <div className="w-full max-w-[320px] sm:max-w-[340px] flex flex-col bg-[#0a1829] rounded-3xl overflow-hidden border-2 border-brand-ciel/30 shadow-2xl relative aspect-[9/16]" ref={container1Ref}>
+          {/* REPRODUCTOR 1: VIDEO DE LA CLASE */}
+          {/* CAMBIO: Se cambió aspect-[9/16] a aspect-[9/19] para dar espacio a los controles */}
+          <div className="w-full max-w-[320px] sm:max-w-[340px] flex flex-col bg-[#0a1829] rounded-3xl overflow-hidden border-2 border-brand-ciel/30 shadow-2xl relative aspect-[9/19]" ref={container1Ref}>
             
             {/* Header bar */}
             <div className="p-3 px-4 bg-[#0e2137] border-b border-white/10 flex items-center justify-between gap-2 text-white shrink-0 z-20">
@@ -179,13 +180,14 @@ export default function VideoSection() {
               </div>
             </div>
 
-            {/* Video Viewport - 9:16 aspect ratio */}
+            {/* Video Viewport */}
             <div className="relative flex-1 bg-black flex items-center justify-center group overflow-hidden">
               <video 
                 ref={video1Ref}
                 src="sergio_intro.mp4"
                 poster="image00022.jpeg"
-                className="w-full h-full object-cover cursor-pointer"
+                // CAMBIO: Se cambió object-cover por object-contain
+                className="w-full h-full object-contain cursor-pointer"
                 playsInline
                 preload="metadata"
                 onClick={togglePlay1}
@@ -275,8 +277,9 @@ export default function VideoSection() {
 
           </div>
 
-          {/* REPRODUCTOR 2: VIDEO DE LA PRESENTACIÓN DEL PROFESOR (9:16 Vertical Aspect Ratio) */}
-          <div className="w-full max-w-[320px] sm:max-w-[340px] flex flex-col bg-[#0a1829] rounded-3xl overflow-hidden border-2 border-brand-ciel/30 shadow-2xl relative aspect-[9/16]" ref={container2Ref}>
+          {/* REPRODUCTOR 2: VIDEO DE LA PRESENTACIÓN DEL PROFESOR */}
+          {/* CAMBIO: Se cambió aspect-[9/16] a aspect-[9/19] para dar espacio a los controles */}
+          <div className="w-full max-w-[320px] sm:max-w-[340px] flex flex-col bg-[#0a1829] rounded-3xl overflow-hidden border-2 border-brand-ciel/30 shadow-2xl relative aspect-[9/19]" ref={container2Ref}>
             
             {/* Header bar */}
             <div className="p-3 px-4 bg-[#0e2137] border-b border-white/10 flex items-center justify-between gap-2 text-white shrink-0 z-20">
@@ -294,13 +297,14 @@ export default function VideoSection() {
               </div>
             </div>
 
-            {/* Video Viewport - 9:16 aspect ratio */}
+            {/* Video Viewport */}
             <div className="relative flex-1 bg-black flex items-center justify-center group overflow-hidden">
               <video 
                 ref={video2Ref}
                 src="sergio_vid.mp4"
                 poster="image00009.jpeg"
-                className="w-full h-full object-cover cursor-pointer"
+                // CAMBIO: Se cambió object-cover por object-contain
+                className="w-full h-full object-contain cursor-pointer"
                 playsInline
                 preload="metadata"
                 onClick={togglePlay2}
@@ -353,7 +357,7 @@ export default function VideoSection() {
                     className="p-1.5 rounded-lg bg-white/10 hover:bg-brand-ciel text-white transition-colors cursor-pointer"
                     title={isPlaying2 ? 'Pausar' : 'Reproducir'}
                   >
-                    {isPlaying2 ? <Pause className="w-3.5 h-3.5 fill-current" /> : <Play className="w-3.5 h-3.5=" />}
+                    {isPlaying2 ? <Pause className="w-3.5 h-3.5 fill-current" /> : <Play className="w-3.5 h-3.5 fill-current" />}
                   </button>
 
                   <button 
