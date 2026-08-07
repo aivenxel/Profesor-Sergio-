@@ -13,7 +13,7 @@ export default function ProposalSection() {
       badge: "LAS EMBLEMÁTICAS 'E' DEL FRANCÉS",
       desc: "Comenzamos dominando los sonidos que no existen en español. Entender las vocales nasales, las emblemáticas 'E' del francés y la 'R' francesa desde su colocación física, sin misterios.",
       architectRef: "Puesta a nivel y cimentación profunda.",
-      image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1721244653757-b76cc4679dfb?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       imageTag: "📷 Fichas & Grafía"
     },
     {
@@ -24,7 +24,7 @@ export default function ProposalSection() {
       badge: "La división silábica y EL ENCADENAMIENTO CONSONÁNTICO",
       desc: "Aprendemos a conectar las palabras mediante la 'liaison', la división silábica, el encadenamiento consonántico y el ritmo del idioma. El francés es una música continua; te enseñamos a construir el esqueleto de tus frases.",
       architectRef: "Vigas de carga, uniones y estabilidad.",
-      image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1624953342603-2a0743472972?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       imageTag: "📷 Biomecánica Vocal"
     },
     {
@@ -35,7 +35,7 @@ export default function ProposalSection() {
       badge: "Corrección postural de boca y lengua",
       desc: "Identificamos y corregimos de inmediato los hábitos del español que ensucian la claridad del francés. Ajustes milimétricos en la mandíbula, lengua y labios para un gran cambio de sonido.",
       architectRef: "Nivelación, plomada y rectificación.",
-      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1523274158540-2aa98c15ec26?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       imageTag: "📷 Feedback en Directo"
     },
     {
@@ -46,7 +46,7 @@ export default function ProposalSection() {
       badge: "Situaciones cotidianas, laborales y sociales",
       desc: "Llevamos la teoría a situaciones cotidianas, laborales y sociales. De nada sirve una estructura hermosa si no puedes habitarla y comunicarte en el mundo real.",
       architectRef: "Distribución interior y habitabilidad.",
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1496564203457-11bb12075d90?q=80&w=1550&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       imageTag: "📷 Aula Virtual Zoom"
     },
     {
@@ -57,7 +57,7 @@ export default function ProposalSection() {
       badge: "Autonomía y articulación segura",
       desc: "Pulimos la entonación y el acento natural para que hables sin miedo a ser juzgado. Ganas esa confianza que te hace sonar seguro, auténtico y dueño de tu proceso.",
       architectRef: "Revestimiento, pintura y detalles finales.",
-      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1661264083807-5e6a54fb12da?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       imageTag: "📷 Confianza & Fluidez"
     }
   ];
