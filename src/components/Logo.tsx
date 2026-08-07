@@ -12,7 +12,7 @@ export default function Logo({ className = '', showText = true, lightBackground 
       {/* High-fidelity Circular Emblem matching the user's exact uploaded asset */}
       <div className="relative w-14 h-14 flex items-center justify-center flex-shrink-0" id="logo-emblem">
         <img 
-          src="/phonetique.png" 
+          src="phonetique.png" 
           alt="Phonétique du Français" 
           className="w-14 h-14 object-contain" 
         />
