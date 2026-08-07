@@ -231,12 +231,12 @@ export default function ProposalSection() {
                     {step.icon}
                   </div>
                   <div>
-                    {/* MODIFICACIÓN: Título dinámico para que sea blanco al estar seleccionado */}
+                    {/* MODIFICACIÓN: Título dinámico reforzado para ser blanco puro al seleccionar */}
                     <h4 className={`font-serif text-base font-bold leading-tight ${activeStep === idx ? 'text-white' : 'text-brand-marine'}`}>
                       {step.title}
                     </h4>
-                    {/* MODIFICACIÓN: Subtítulo dinámico para que sea blanco claro al estar seleccionado */}
-                    <p className={`font-sans text-xs mt-0.5 ${activeStep === idx ? 'text-white/80' : 'text-brand-ardoise'}`}>
+                    {/* MODIFICACIÓN: Subtítulo dinámico con text-gray-200 para evitar problemas de opacidad en Tailwind */}
+                    <p className={`font-sans text-xs mt-0.5 ${activeStep === idx ? 'text-gray-200' : 'text-brand-ardoise'}`}>
                       {step.subtitle}
                     </p>
                   </div>
@@ -247,7 +247,9 @@ export default function ProposalSection() {
           </div>
 
           {/* Right Column: Expanded View (7 Columns) */}
-          <div className="lg:col-span-7 bg-white rounded-2xl border border-brand-ivoire p-6 sm:p-8 flex flex-col justify-start shadow-xs relative overflow-hidden text-left min-h-[380px]">
+          {/* MODIFICACIÓN: Se eliminó min-h-[380px] y se reemplazó por h-fit para que se adapte al contenido */}
+          <div className="lg:col-span-7 bg-white rounded-2xl border border-brand-ivoire p-6 sm:p-8 flex flex-col justify-start shadow-xs relative overflow-hidden text-left h-fit">
+            
             {/* Structural corner lines */}
             <div className="absolute top-0 right-0 w-20 h-20 border-t border-r border-brand-ciel/30 pointer-events-none translate-x-[-10px] translate-y-[10px]" />
             <div className="absolute bottom-0 left-0 w-20 h-20 border-b border-l border-brand-or/30 pointer-events-none translate-x-[10px] translate-y-[-10px]" />
@@ -297,8 +299,6 @@ export default function ProposalSection() {
                 </div>
               </div>
             </div>
-
-            {/* SE ELIMINÓ EL BLOQUE "Referencia Técnica Arquitectónica" QUE ESTABA AQUÍ */}
 
           </div>
 
