@@ -219,8 +219,8 @@ export default function ProposalSection() {
                 onClick={() => setActiveStep(idx)}
                 className={`w-full text-left p-4 rounded-xl border transition-all duration-300 flex items-center justify-between gap-4 group ${
                   activeStep === idx 
-                    ? 'bg-brand-marine border-brand-marine text-white shadow-md' 
-                    : 'bg-white border-brand-ivoire hover:border-brand-ciel/50 text-brand-marine'
+                    ? 'bg-brand-marine border-brand-marine shadow-md' 
+                    : 'bg-white border-brand-ivoire hover:border-brand-ciel/50'
                 }`}
               >
                 <div className="flex items-center gap-4">
@@ -231,10 +231,12 @@ export default function ProposalSection() {
                     {step.icon}
                   </div>
                   <div>
-                    <h4 className="font-serif text-base font-bold leading-tight">
+                    {/* MODIFICACIÓN: Título dinámico para que sea blanco al estar seleccionado */}
+                    <h4 className={`font-serif text-base font-bold leading-tight ${activeStep === idx ? 'text-white' : 'text-brand-marine'}`}>
                       {step.title}
                     </h4>
-                    <p className={`font-sans text-xs ${activeStep === idx ? 'text-brand-ivoire/80' : 'text-brand-ardoise'}`}>
+                    {/* MODIFICACIÓN: Subtítulo dinámico para que sea blanco claro al estar seleccionado */}
+                    <p className={`font-sans text-xs mt-0.5 ${activeStep === idx ? 'text-white/80' : 'text-brand-ardoise'}`}>
                       {step.subtitle}
                     </p>
                   </div>
@@ -245,7 +247,7 @@ export default function ProposalSection() {
           </div>
 
           {/* Right Column: Expanded View (7 Columns) */}
-          <div className="lg:col-span-7 bg-white rounded-2xl border border-brand-ivoire p-6 sm:p-8 flex flex-col justify-between shadow-xs relative overflow-hidden text-left min-h-[380px]">
+          <div className="lg:col-span-7 bg-white rounded-2xl border border-brand-ivoire p-6 sm:p-8 flex flex-col justify-start shadow-xs relative overflow-hidden text-left min-h-[380px]">
             {/* Structural corner lines */}
             <div className="absolute top-0 right-0 w-20 h-20 border-t border-r border-brand-ciel/30 pointer-events-none translate-x-[-10px] translate-y-[10px]" />
             <div className="absolute bottom-0 left-0 w-20 h-20 border-b border-l border-brand-or/30 pointer-events-none translate-x-[10px] translate-y-[-10px]" />
@@ -271,7 +273,7 @@ export default function ProposalSection() {
 
               {/* Step Content: Grid with Description and Phase Image */}
               <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center">
-                <div className="sm:col-span-7 space-y-3">
+                <div className="sm:col-span-7 space-y-4">
                   <p className="font-sans text-sm sm:text-base text-brand-ardoise leading-relaxed font-normal">
                     {steps[activeStep].desc}
                   </p>
@@ -296,20 +298,7 @@ export default function ProposalSection() {
               </div>
             </div>
 
-            {/* Architectural structural reference overlay */}
-            <div className="mt-6 bg-brand-ivoire/60 p-3.5 rounded-xl border-l-4 border-brand-or flex items-center justify-between gap-4 text-xs font-mono">
-              <div className="text-left">
-                <span className="text-brand-ardoise block uppercase tracking-wider text-[9px] font-bold">
-                  Referencia Técnica Arquitectónica
-                </span>
-                <span className="text-brand-marine font-bold">
-                  {steps[activeStep].architectRef}
-                </span>
-              </div>
-              <div className="text-brand-ciel shrink-0 text-base">
-                📐
-              </div>
-            </div>
+            {/* SE ELIMINÓ EL BLOQUE "Referencia Técnica Arquitectónica" QUE ESTABA AQUÍ */}
 
           </div>
 
