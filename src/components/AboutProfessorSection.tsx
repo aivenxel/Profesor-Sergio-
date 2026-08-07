@@ -35,7 +35,7 @@ export default function AboutProfessorSection() {
             <div className="relative w-full max-w-[340px] aspect-[4/5] rounded-2xl bg-white p-3 border border-brand-ivoire shadow-xl">
               <div className="w-full h-full rounded-xl overflow-hidden relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=600&h=750" 
+                  src="image00019.jpeg" 
                   alt="Prof. Sergio Tomassi" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
