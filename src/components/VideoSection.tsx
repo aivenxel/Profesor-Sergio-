@@ -150,10 +150,10 @@ export default function VideoSection() {
         <div className="text-center space-y-3 max-w-3xl mx-auto">
           <span className="font-sans text-xs uppercase tracking-[0.25em] font-semibold text-brand-ciel inline-flex items-center gap-1.5 bg-brand-ciel/10 px-3.5 py-1 rounded-full border border-brand-ciel/20">
             <Sparkles className="w-3.5 h-3.5" />
-            REPRODUCTOR DUAL
+            Clase en Video
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight text-brand-marine">
-            Clase del Profesor y Presentación
+            Conoce al profesor
           </h2>
         </div>
 
@@ -168,7 +168,7 @@ export default function VideoSection() {
               <div className="flex items-center gap-1.5">
                 <MonitorPlay className="w-4 h-4 text-brand-ciel" />
                 <span className="font-mono text-xs uppercase tracking-wider font-bold text-white truncate max-w-[150px]">
-                  Video de la Clase
+                  Mensaje en video
                 </span>
               </div>
               <div className="flex items-center gap-1.5">
