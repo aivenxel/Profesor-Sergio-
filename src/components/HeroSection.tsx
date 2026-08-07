@@ -156,7 +156,7 @@ export default function HeroSection({ onCtaClick }: HeroSectionProps) {
             {/* Main Picture */}
             <div className="w-full h-full rounded-md overflow-hidden relative group">
               <img 
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800&h=1000" 
+                src="Asset 4.png" 
                 alt="Prof. Sergio Tomassi" 
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 referrerPolicy="no-referrer"
