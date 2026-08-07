@@ -149,7 +149,7 @@ export default function BenefitsSection() {
           {/* Right Column: Image */}
           <div className="md:col-span-5 relative rounded-2xl overflow-hidden border-2 border-brand-ivoire shadow-md aspect-[4/3] md:aspect-auto md:h-full min-h-[200px] group">
             <img 
-              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" 
+              src="image00008h.jpeg" 
               alt="Prof. Sergio Tomassi enseñando técnica vocal" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
