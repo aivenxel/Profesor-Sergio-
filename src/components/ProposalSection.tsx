@@ -11,7 +11,7 @@ export default function ProposalSection() {
       title: "Los Cimientos",
       subtitle: "Sonidos esenciales y las emblemáticas 'E' del francés",
       badge: "LAS EMBLEMÁTICAS 'E' DEL FRANCÉS",
-      desc: "Comenzamos dominando los sonidos que no existen en español. Entender las vocales nasales, las emblemáticas 'E' del francés y la 'R' francesa desde su colocación física, sin misterios.",
+      desc: "Comenzamos dominando los sonidos que no existen en español. Entender las vocales nasales, la emblemática 'E' del francés desde su colocación física, sin misterios.",
       architectRef: "Puesta a nivel y cimentación profunda.",
       image: "https://images.unsplash.com/photo-1721244653757-b76cc4679dfb?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       imageTag: "📷 Fichas & Grafía"
